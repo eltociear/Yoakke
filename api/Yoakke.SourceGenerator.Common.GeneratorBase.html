@@ -1,0 +1,834 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GeneratorBase
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GeneratorBase
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase">
+  
+  
+  <h1 id="Yoakke_SourceGenerator_Common_GeneratorBase" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase" class="text-break">Class GeneratorBase
+  </h1>
+  <div class="markdown level0 summary"><p>Abstraction for <see cref="!:ISourceGenerator"></see>s to provide some common operations.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">GeneratorBase</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yoakke.SourceGenerator.Common.html">Yoakke.SourceGenerator.Common</a></h6>
+  <h6><strong>Assembly</strong>: Yoakke.SourceGenerator.Common.dll</h6>
+  <h5 id="Yoakke_SourceGenerator_Common_GeneratorBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class GeneratorBase : ISourceGenerator</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_SourceGenerator_Common_GeneratorBase__ctor_System_String_.md&amp;value=---%0Auid%3A%20Yoakke.SourceGenerator.Common.GeneratorBase.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Shared/Libraries/SourceGenerator.Common/GeneratorBase.cs/#L31">View Source</a>
+  </span>
+  <a id="Yoakke_SourceGenerator_Common_GeneratorBase__ctor_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.#ctor*"></a>
+  <h4 id="Yoakke_SourceGenerator_Common_GeneratorBase__ctor_System_String_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.#ctor(System.String)">GeneratorBase(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yoakke.SourceGenerator.Common.GeneratorBase.html">GeneratorBase</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GeneratorBase(string libraryName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">libraryName</span></td>
+        <td><p>The name of the library this generator is for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_SourceGenerator_Common_GeneratorBase_Context.md&amp;value=---%0Auid%3A%20Yoakke.SourceGenerator.Common.GeneratorBase.Context%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Shared/Libraries/SourceGenerator.Common/GeneratorBase.cs/#L22">View Source</a>
+  </span>
+  <a id="Yoakke_SourceGenerator_Common_GeneratorBase_Context_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.Context*"></a>
+  <h4 id="Yoakke_SourceGenerator_Common_GeneratorBase_Context" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.Context">Context</h4>
+  <div class="markdown level1 summary"><p>The current <see cref="!:GeneratorExecutionContext"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GeneratorExecutionContext Context { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GeneratorExecutionContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_SourceGenerator_Common_GeneratorBase_AddSource_System_String_System_String_.md&amp;value=---%0Auid%3A%20Yoakke.SourceGenerator.Common.GeneratorBase.AddSource(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Shared/Libraries/SourceGenerator.Common/GeneratorBase.cs/#L111">View Source</a>
+  </span>
+  <a id="Yoakke_SourceGenerator_Common_GeneratorBase_AddSource_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.AddSource*"></a>
+  <h4 id="Yoakke_SourceGenerator_Common_GeneratorBase_AddSource_System_String_System_String_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.AddSource(System.String,System.String)">AddSource(String, String)</h4>
+  <div class="markdown level1 summary"><p>Adds a source-file to the current <see cref="!:GeneratorExecutionContext"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddSource(string fileName, string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The name of the file to add.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>The contents of the file to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_SourceGenerator_Common_GeneratorBase_CreateSyntaxReceiver_GeneratorInitializationContext_.md&amp;value=---%0Auid%3A%20Yoakke.SourceGenerator.Common.GeneratorBase.CreateSyntaxReceiver(GeneratorInitializationContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Shared/Libraries/SourceGenerator.Common/GeneratorBase.cs/#L57">View Source</a>
+  </span>
+  <a id="Yoakke_SourceGenerator_Common_GeneratorBase_CreateSyntaxReceiver_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.CreateSyntaxReceiver*"></a>
+  <h4 id="Yoakke_SourceGenerator_Common_GeneratorBase_CreateSyntaxReceiver_GeneratorInitializationContext_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.CreateSyntaxReceiver(GeneratorInitializationContext)">CreateSyntaxReceiver(GeneratorInitializationContext)</h4>
+  <div class="markdown level1 summary"><p>Creates a proper <see cref="!:ISyntaxReceiver"></see> for this source generator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract ISyntaxReceiver CreateSyntaxReceiver(GeneratorInitializationContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GeneratorInitializationContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The received <see cref="!:GeneratorInitializationContext"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ISyntaxReceiver</span></td>
+        <td><p>The <see cref="!:ISyntaxReceiver"></see> to be used by the source generator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_SourceGenerator_Common_GeneratorBase_Execute_GeneratorExecutionContext_.md&amp;value=---%0Auid%3A%20Yoakke.SourceGenerator.Common.GeneratorBase.Execute(GeneratorExecutionContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Shared/Libraries/SourceGenerator.Common/GeneratorBase.cs/#L42">View Source</a>
+  </span>
+  <a id="Yoakke_SourceGenerator_Common_GeneratorBase_Execute_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.Execute*"></a>
+  <h4 id="Yoakke_SourceGenerator_Common_GeneratorBase_Execute_GeneratorExecutionContext_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.Execute(GeneratorExecutionContext)">Execute(GeneratorExecutionContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Execute(GeneratorExecutionContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GeneratorExecutionContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_SourceGenerator_Common_GeneratorBase_GenerateCode_ISyntaxReceiver_.md&amp;value=---%0Auid%3A%20Yoakke.SourceGenerator.Common.GeneratorBase.GenerateCode(ISyntaxReceiver)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Shared/Libraries/SourceGenerator.Common/GeneratorBase.cs/#L71">View Source</a>
+  </span>
+  <a id="Yoakke_SourceGenerator_Common_GeneratorBase_GenerateCode_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.GenerateCode*"></a>
+  <h4 id="Yoakke_SourceGenerator_Common_GeneratorBase_GenerateCode_ISyntaxReceiver_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.GenerateCode(ISyntaxReceiver)">GenerateCode(ISyntaxReceiver)</h4>
+  <div class="markdown level1 summary"><p>Commands the source generator to do the code generation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateCode(ISyntaxReceiver syntaxReceiver)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ISyntaxReceiver</span></td>
+        <td><span class="parametername">syntaxReceiver</span></td>
+        <td><p>The <see cref="!:ISyntaxReceiver"></see> that this source generator created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_SourceGenerator_Common_GeneratorBase_Initialize_GeneratorInitializationContext_.md&amp;value=---%0Auid%3A%20Yoakke.SourceGenerator.Common.GeneratorBase.Initialize(GeneratorInitializationContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Shared/Libraries/SourceGenerator.Common/GeneratorBase.cs/#L38">View Source</a>
+  </span>
+  <a id="Yoakke_SourceGenerator_Common_GeneratorBase_Initialize_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.Initialize*"></a>
+  <h4 id="Yoakke_SourceGenerator_Common_GeneratorBase_Initialize_GeneratorInitializationContext_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.Initialize(GeneratorInitializationContext)">Initialize(GeneratorInitializationContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(GeneratorInitializationContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GeneratorInitializationContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_SourceGenerator_Common_GeneratorBase_IsOwnSyntaxReceiver_ISyntaxReceiver_.md&amp;value=---%0Auid%3A%20Yoakke.SourceGenerator.Common.GeneratorBase.IsOwnSyntaxReceiver(ISyntaxReceiver)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Shared/Libraries/SourceGenerator.Common/GeneratorBase.cs/#L65">View Source</a>
+  </span>
+  <a id="Yoakke_SourceGenerator_Common_GeneratorBase_IsOwnSyntaxReceiver_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.IsOwnSyntaxReceiver*"></a>
+  <h4 id="Yoakke_SourceGenerator_Common_GeneratorBase_IsOwnSyntaxReceiver_ISyntaxReceiver_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.IsOwnSyntaxReceiver(ISyntaxReceiver)">IsOwnSyntaxReceiver(ISyntaxReceiver)</h4>
+  <div class="markdown level1 summary"><p>Checks if the <see cref="!:ISyntaxReceiver"></see> is one that belongs to this source generator.
+Usually an 'is' type-check.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract bool IsOwnSyntaxReceiver(ISyntaxReceiver syntaxReceiver)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ISyntaxReceiver</span></td>
+        <td><span class="parametername">syntaxReceiver</span></td>
+        <td><p>The <see cref="!:ISyntaxReceiver"></see> to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if <code data-dev-comment-type="paramref" class="paramref">syntaxReceiver</code> belongs to this source generator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_SourceGenerator_Common_GeneratorBase_LoadSymbol_System_String_.md&amp;value=---%0Auid%3A%20Yoakke.SourceGenerator.Common.GeneratorBase.LoadSymbol(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Shared/Libraries/SourceGenerator.Common/GeneratorBase.cs/#L95">View Source</a>
+  </span>
+  <a id="Yoakke_SourceGenerator_Common_GeneratorBase_LoadSymbol_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.LoadSymbol*"></a>
+  <h4 id="Yoakke_SourceGenerator_Common_GeneratorBase_LoadSymbol_System_String_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.LoadSymbol(System.String)">LoadSymbol(String)</h4>
+  <div class="markdown level1 summary"><p>Loads an <see cref="!:INamedTypeSymbol"></see>, caching the result for later use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected INamedTypeSymbol LoadSymbol(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The fully-qualified name of the symbol.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">INamedTypeSymbol</span></td>
+        <td><p>The loaded <see cref="!:INamedTypeSymbol"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_SourceGenerator_Common_GeneratorBase_Report_DiagnosticDescriptor_Location_System_Object___.md&amp;value=---%0Auid%3A%20Yoakke.SourceGenerator.Common.GeneratorBase.Report(DiagnosticDescriptor%2CLocation%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Shared/Libraries/SourceGenerator.Common/GeneratorBase.cs/#L87">View Source</a>
+  </span>
+  <a id="Yoakke_SourceGenerator_Common_GeneratorBase_Report_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.Report*"></a>
+  <h4 id="Yoakke_SourceGenerator_Common_GeneratorBase_Report_DiagnosticDescriptor_Location_System_Object___" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.Report(DiagnosticDescriptor,Location,System.Object[])">Report(DiagnosticDescriptor, Location, Object[])</h4>
+  <div class="markdown level1 summary"><p>Utility to report a <see cref="!:Diagnostic"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Report(DiagnosticDescriptor descriptor, Location location, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DiagnosticDescriptor</span></td>
+        <td><span class="parametername">descriptor</span></td>
+        <td><p>The <see cref="!:DiagnosticDescriptor"></see> for the <see cref="!:Diagnostic"></see>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Location</span></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The <see cref="!:Location"></see> of the <see cref="!:Diagnostic"></see>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments for the formatted diagnostic message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_SourceGenerator_Common_GeneratorBase_Report_DiagnosticDescriptor_System_Object___.md&amp;value=---%0Auid%3A%20Yoakke.SourceGenerator.Common.GeneratorBase.Report(DiagnosticDescriptor%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Shared/Libraries/SourceGenerator.Common/GeneratorBase.cs/#L78">View Source</a>
+  </span>
+  <a id="Yoakke_SourceGenerator_Common_GeneratorBase_Report_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.Report*"></a>
+  <h4 id="Yoakke_SourceGenerator_Common_GeneratorBase_Report_DiagnosticDescriptor_System_Object___" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.Report(DiagnosticDescriptor,System.Object[])">Report(DiagnosticDescriptor, Object[])</h4>
+  <div class="markdown level1 summary"><p>Utility to report a <see cref="!:Diagnostic"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Report(DiagnosticDescriptor descriptor, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DiagnosticDescriptor</span></td>
+        <td><span class="parametername">descriptor</span></td>
+        <td><p>The <see cref="!:DiagnosticDescriptor"></see> for the <see cref="!:Diagnostic"></see>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments for the formatted diagnostic message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_SourceGenerator_Common_GeneratorBase_RequireDeclarableInside_ISymbol_.md&amp;value=---%0Auid%3A%20Yoakke.SourceGenerator.Common.GeneratorBase.RequireDeclarableInside(ISymbol)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Shared/Libraries/SourceGenerator.Common/GeneratorBase.cs/#L184">View Source</a>
+  </span>
+  <a id="Yoakke_SourceGenerator_Common_GeneratorBase_RequireDeclarableInside_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.RequireDeclarableInside*"></a>
+  <h4 id="Yoakke_SourceGenerator_Common_GeneratorBase_RequireDeclarableInside_ISymbol_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.RequireDeclarableInside(ISymbol)">RequireDeclarableInside(ISymbol)</h4>
+  <div class="markdown level1 summary"><p>Requires a <see cref="!:ISymbol"></see> to be able to accept declarations inside from external sources.
+This can mean that the symbol is a namespace or partial.
+If it does not, a <see cref="!:Diagnostic"></see> error is raised.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool RequireDeclarableInside(ISymbol symbol)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ISymbol</span></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The <see cref="!:ISymbol"></see> to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if <code data-dev-comment-type="paramref" class="paramref">symbol</code> accepts declarations inside from external sources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_SourceGenerator_Common_GeneratorBase_RequireLibrary_System_String_.md&amp;value=---%0Auid%3A%20Yoakke.SourceGenerator.Common.GeneratorBase.RequireLibrary(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Shared/Libraries/SourceGenerator.Common/GeneratorBase.cs/#L119">View Source</a>
+  </span>
+  <a id="Yoakke_SourceGenerator_Common_GeneratorBase_RequireLibrary_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.RequireLibrary*"></a>
+  <h4 id="Yoakke_SourceGenerator_Common_GeneratorBase_RequireLibrary_System_String_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.RequireLibrary(System.String)">RequireLibrary(String)</h4>
+  <div class="markdown level1 summary"><p>Requires a library to be referenced by the user.
+If it is not found, a <see cref="!:Diagnostic"></see> error is raised.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool RequireLibrary(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The fully-qualified name of the library to require.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if the library was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_SourceGenerator_Common_GeneratorBase_RequireNonNested_ISymbol_.md&amp;value=---%0Auid%3A%20Yoakke.SourceGenerator.Common.GeneratorBase.RequireNonNested(ISymbol)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Shared/Libraries/SourceGenerator.Common/GeneratorBase.cs/#L167">View Source</a>
+  </span>
+  <a id="Yoakke_SourceGenerator_Common_GeneratorBase_RequireNonNested_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.RequireNonNested*"></a>
+  <h4 id="Yoakke_SourceGenerator_Common_GeneratorBase_RequireNonNested_ISymbol_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.RequireNonNested(ISymbol)">RequireNonNested(ISymbol)</h4>
+  <div class="markdown level1 summary"><p>Requires a <see cref="!:ISymbol"></see> not to be a nested type.
+If it is a nested type, a <see cref="!:Diagnostic"></see> error is raised.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool RequireNonNested(ISymbol symbol)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ISymbol</span></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The <see cref="!:ISymbol"></see> to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if <code data-dev-comment-type="paramref" class="paramref">symbol</code> is not nested.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_SourceGenerator_Common_GeneratorBase_RequirePartial_ITypeSymbol_.md&amp;value=---%0Auid%3A%20Yoakke.SourceGenerator.Common.GeneratorBase.RequirePartial(ITypeSymbol)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Shared/Libraries/SourceGenerator.Common/GeneratorBase.cs/#L151">View Source</a>
+  </span>
+  <a id="Yoakke_SourceGenerator_Common_GeneratorBase_RequirePartial_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.RequirePartial*"></a>
+  <h4 id="Yoakke_SourceGenerator_Common_GeneratorBase_RequirePartial_ITypeSymbol_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.RequirePartial(ITypeSymbol)">RequirePartial(ITypeSymbol)</h4>
+  <div class="markdown level1 summary"><p>Requires an <see cref="!:ITypeSymbol"></see> to be declared partial.
+If it is not, a <see cref="!:Diagnostic"></see> error is raised.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool RequirePartial(ITypeSymbol symbol)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ITypeSymbol</span></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The <see cref="!:ITypeSymbol"></see> to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if <code data-dev-comment-type="paramref" class="paramref">symbol</code> is partial.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_SourceGenerator_Common_GeneratorBase_RequirePartial_TypeDeclarationSyntax_.md&amp;value=---%0Auid%3A%20Yoakke.SourceGenerator.Common.GeneratorBase.RequirePartial(TypeDeclarationSyntax)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Shared/Libraries/SourceGenerator.Common/GeneratorBase.cs/#L135">View Source</a>
+  </span>
+  <a id="Yoakke_SourceGenerator_Common_GeneratorBase_RequirePartial_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.RequirePartial*"></a>
+  <h4 id="Yoakke_SourceGenerator_Common_GeneratorBase_RequirePartial_TypeDeclarationSyntax_" data-uid="Yoakke.SourceGenerator.Common.GeneratorBase.RequirePartial(TypeDeclarationSyntax)">RequirePartial(TypeDeclarationSyntax)</h4>
+  <div class="markdown level1 summary"><p>Requires a <see cref="!:TypeDeclarationSyntax"></see> node to be declared partial.
+If it is not, a <see cref="!:Diagnostic"></see> error is raised.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool RequirePartial(TypeDeclarationSyntax syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TypeDeclarationSyntax</span></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>The <see cref="!:TypeDeclarationSyntax"></see> to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if <code data-dev-comment-type="paramref" class="paramref">syntax</code> is partial.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_SourceGenerator_Common_GeneratorBase.md&amp;value=---%0Auid%3A%20Yoakke.SourceGenerator.Common.GeneratorBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Shared/Libraries/SourceGenerator.Common/GeneratorBase.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
